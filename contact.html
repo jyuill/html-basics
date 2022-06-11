@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- local CSS; after bootstrap -->
+        <link rel="stylesheet" href="style/styles.css" />
+    </head>
+    <body>
+        <div id="outer" class="container">
+            <div id="nav">
+                <a href="index.html">Hm run</a> | 
+                <a href="about.html">Aboot</a> | 
+                <a href="contact.html">Contakt</a>
+            </div>
+            <div id="content">
+                <h1>Contactless Contact</h1>
+                <h2 id="banner">Contact form</h2>
+                <form action="success.html">
+                    <label for="fname">Full Name</label>
+                    <br />
+                    <input type="text" id="fname" name="fname" class="form-control" />
+                    <br />
+                    <label for="email">Email</label>
+                    <br />
+                    <input class="form-control" type="email" id="emailaddress" name="emailaddress" />
+                    <br />
+                    <label for="query">Query</label>
+                    <br />
+                    <textarea id="query" name="query" class="form-control"></textarea>
+                    <br /><br />
+                    <input type="submit" value="Send us your query!" onclick='btnClick2()' class="btn btn-success" />
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Basic webpage: orig with some CSS, JS</title>
+        <!-- CSS only -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- local CSS; after bootstrap -->
+        <link rel="stylesheet" href="style/styles.css" />
+    </head>
+    <body>
+        <a href="index.html">Hm run</a> | 
+        <a href="about.html">Aboot</a> | 
+        <a href="contact.html">Contakt</a>
+        <h1 style="color: rgb(172, 16, 16);
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;">
+            Big Heading 1: styled from inline AND external</h1>
+        <p>easy paragraph. yo soy John.<br />Breaking for new line.</p>
+        <p id="tgtTag">Lo siento, el escuale es cerrado.</p>
+        <!-- comment no comment -->
+        <!-- <p>Bunch more stuff in another para.</p> -->
+        <h2 style="color: blue" id="banner">H2 Pay Attention 
+            (style: inline, extrrnal)</h2>
+        <p class="information">some text here in p, class = information..</p>
+        <h3 style="color: #325487">Third in line H3 (inline, ext)</h3>
+        <button type='button' onclick="btnClick()">Click here for alert!</button>
+        <button type='button' onclick="btnClick2()">Click here for js from file!</button>
+        <button type='button' onclick="btnChgClick()">Click here to translate.</button>
+        <button type='button' id="hideBannerBtn">Click to hide/unhide banner.</button>
+        <script>
+            function btnClick(){
+                alert("You clicked the button - you're a champ.");
+            }
+            function btnChgClick(){
+                document.getElementById('tgtTag').innerHTML="I'm sorry, the school is closed.";
+            }
+        </script>
+        <!-- add jquery: best before links to local js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+                crossorigin="anonymous">       
+        </script>
+        <!-- script using jquery -->
+        <script>
+            $(function(){
+            $('#hideBannerBtn').click(function(){
+                $('#banner').toggle();
+            });
+        });  
+        </script>
+        <!-- local js -->
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>

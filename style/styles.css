@@ -1,0 +1,25 @@
+h1, h2, h3 {
+    /*text-decoration: underline;*/
+    text-align: center;
+}
+h3 {text-decoration: underline;}
+/* id tag */
+#banner {
+    background-color: aqua;
+}
+
+/* class tag */
+.information {
+    color:coral;
+    font-style: italic;
+}
+
+/* table id */
+#stafftbl td, #stafftbl th {
+    border: 1px solid gray;
+    padding: 2px;
+}
+#stafftbl th {
+    background-color: blue;
+    color: #fff;
+}

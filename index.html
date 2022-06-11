@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Less Basic webpage</title>
+        <!-- CSS only -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- local CSS; after bootstrap -->
+        <link rel="stylesheet" href="style/styles.css" />
+    </head>
+    <body>
+        <!-- set outer container using bootstrap class -->
+        <p>Outer container with Bootstrap class='container'</p>
+        <div id="outer" class="container">
+        <div id="nav">
+            <a href="index.html">Hm run</a> | 
+            <a href="index_orig.html">Hm orig.</a> |
+            <a href="about.html">Aboot</a> | 
+            <a href="contact.html">Contakt</a>
+        </div><!-- end of nav-->
+        <div id="content"> 
+            <h1 style="color: rgb(172, 16, 16);
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;">
+                Big Heading 1: styled from inline AND external</h1>
+            <p>easy paragraph. yo soy John.<br />Breaking for new line.</p>
+            <p id="tgtTag">Lo siento, el escuale es cerrado.</p>
+            <!-- comment no comment -->
+            <!-- <p>Bunch more stuff in another para.</p> -->
+            <h2 style="color: blue" id="banner">H2 Pay Attention 
+                (style: inline, extrrnal)</h2>
+            <p class="information">some text here in p, class = information..</p>
+            <h3 style="color: #325487">Third in line H3 (inline, ext)</h3>
+            <p>Button styles from Bootstrap </p>
+            <button type='button' onclick="btnClick()" class="btn btn-danger">Click here for alert!</button>
+            <button type='button' onclick="btnClick2()" class="btn btn-primary">Click here for js from file!</button>
+            <button type='button' onclick="btnChgClick()" class="btn btn-secondary">Click here to translate.</button>
+            <button type='button' id="hideBannerBtn" class="btn btn-warning">Click to hide/unhide banner.</button>
+        </div><!-- end of content -->
+        <div id="footer">
+            <hr>
+            <p>We gotta have a footer, right?</p>
+        </div><!-- end footer -->
+    </div><!-- end outer container -->
+
+        <script>
+            function btnClick(){
+                alert("You clicked the button - you're a champ.");
+            }
+            function btnChgClick(){
+                document.getElementById('tgtTag').innerHTML="I'm sorry, the school is closed.";
+            }
+        </script>
+        <!-- JavaScript Bundle with Popper from Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+            crossorigin="anonymous">
+        </script>
+        <!-- add jquery: best before links to local js -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+                crossorigin="anonymous">       
+        </script>
+        <!-- script using jquery -->
+        <script>
+            $(function(){
+            $('#hideBannerBtn').click(function(){
+                $('#banner').toggle();
+            });
+        });  
+        </script>
+        <!-- local js -->
+        <script src="js/script.js"></script>
+        
+    </body>
+</html>
