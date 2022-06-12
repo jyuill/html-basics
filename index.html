@@ -14,16 +14,12 @@
     </head>
     <body>
         <!-- set outer container using bootstrap class -->
-        <p>Outer container with Bootstrap class='container': 
-            <a href="https://symphonious-starlight-c8fafc.netlify.app/">
-                site on Netlify
-            </a></p>
         <div id="outer" class="container">
         <!-- from Bootstrap; incl hamburger on right at small window -->
             <!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
-            <nav class="navbar navbar-expand-lg" style="background-color: #d7d15e;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">JY Website</a>
+                  <a class="navbar-brand" href="https://symphonious-starlight-c8fafc.netlify.app/">JY Netlify Website</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -40,38 +36,75 @@
               </nav>
         <!-- end of nav-->
         <div id="content"> 
-            <h1 style="color: rgb(172, 16, 16);
-            font-style: italic;
-            font-family: Arial, Helvetica, sans-serif;">
-                Big Heading 1: styled from inline AND external</h1>
-            <p>An easy paragraph. Yo soy John. Mi llamo John. <br />Breaking for new line.</p>
-            <p id="tgtTag">Lo siento, el escuale es cerrado.</p>
-            <!-- comment no comment -->
-            <!-- <p>Bunch more stuff in another para.</p> -->
-            <h2 style="color: blue" id="banner">H2 Pay Attention 
-                (style: inline, extrrnal)</h2>
-            <p class="information">Some text here in p, class = information..</p>
-            <h3 style="color: #325487">Third in line H3 (inline, ext)</h3>
-            <p>Button styles from Bootstrap </p>
-            <button type='button' onclick="btnClick()" class="btn btn-danger">Click here for alert!</button>
-            <button type='button' onclick="btnClick2()" class="btn btn-primary">Click here for js from file!</button>
-            <button type='button' onclick="btnChgClick()" class="btn btn-secondary">Click here to translate.</button>
-            <button type='button' id="hideBannerBtn" class="btn btn-warning">Click to hide/unhide banner.</button>
+            <h1>Simple Demonstration Site</h1>
+            <p class="pctr" style="font-style: italic;">Leveraging Bootstap, with some extra CSS and a touch of JavaScript.</p>
+            <p id="tgtTag">Hola! Mi llamo John! Yo tengo un bicicleta. Yo quiero pagar la cuenta, por favour.</p>
+            <button type='button' onclick="btnChgClick()" class="btn btn-secondary">Translate</button>
+            <hr>
+            <!-- carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/wave_640.jpg" height="400px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/fish_640.jpg" height="400px" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/sunset_640.jpg" height="400px" class="d-block w-100" alt="sunset over the water">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- end carousel -->
+            <!-- 3 col layout -->
+            <hr>
+            <div class="row align-items-start">
+                <div class="col">
+                  <div class="colhead"><h2>Waves</h2></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eius itaque vero veniam vitae, doloribus incidunt ab mollitia odio aut tempore esse doloremque animi, reprehenderit enim obcaecati quo, autem magni.</p>
+                  <p>The waves are steady and true. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sed aut corrupti ea maiores debitis sint voluptas deserunt laborum animi provident nihil, distinctio cumque exercitationem porro repudiandae enim natus minus!</p>
+                  <div class="colimg">
+                    <img src="img/wave_640.jpg" class="image_col">
+                  </div>
+                </div>
+                <div class="col">
+                  <div><h2 class="colhead">Sea Life</h2></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid error impedit laborum explicabo ad ea aspernatur sequi, culpa, eligendi perferendis asperiores eaque ipsa est harum incidunt cum vitae voluptatem eos!</p>
+                  <p>The is teeming. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam cupiditate saepe omnis illum totam ex inventore aliquid molestias cum et sequi, non, sapiente corrupti quia. Hic esse eveniet officia!</p>
+                  <div class="colimg">
+                    <img src="img/fish_640.jpg" class="image_col">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="colhead"><h2>Day's End</h2></div>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum accusantium autem corrupti, alias aliquid quos, quasi at quia officia mollitia non nisi consequuntur maiores voluptatem voluptate eius placeat quo temporibus?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis quos laborum nulla officiis earum non qui, sunt deserunt suscipit illo incidunt molestias animi itaque omnis quod aut unde nostrum!</p>
+                  <div class="colimg">
+                      <img src="img/sunset_640.jpg" class="image_col">
+                  </div>
+                </div>
+              </div>
+            <!-- end 3 col layout -->
         </div><!-- end of content -->
         <div id="footer">
             <hr>
-            <p>We gotta have a footer, right?</p>
+            <p>&copy; Copyright JY&reg; </p>
         </div><!-- end footer -->
     </div><!-- end outer container -->
 
-        <script>
-            function btnClick(){
-                alert("You clicked the button - you're a champ.");
-            }
-            function btnChgClick(){
-                document.getElementById('tgtTag').innerHTML="I'm sorry, the school is closed.";
-            }
-        </script>
         <!-- JavaScript Bundle with Popper from Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
