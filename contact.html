@@ -9,34 +9,111 @@
         crossorigin="anonymous">
         <!-- local CSS; after bootstrap -->
         <link rel="stylesheet" href="style/styles.css" />
+        <link rel="icon" href="img/heart-icon-64.png" />
     </head>
     <body>
-        <div id="outer" class="container">
-            <div id="nav">
-                <a href="index.html">Hm run</a> | 
-                <a href="about.html">Aboot</a> | 
-                <a href="contact.html">Contakt</a>
-            </div>
+            <!-- from Bootstrap; incl hamburger on right at small window -->
+            <!-- set above outer container div so extends across top of page -->
+            <!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://symphonious-starlight-c8fafc.netlify.app/">JY Netlify Website</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="index.html">Home</a>
+                          <a class="nav-link" href="about.html">About</a>
+                          <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+                          <a class="nav-link" href="#"> | </a>
+                          <a class="nav-link" href="list-tbl.html">List-Tbl</a>
+                          <a class="nav-link" href="contact-orig.html">Contact orig</a>
+                          <a class="nav-link" href="index_orig.html">Hm orig</a>
+                          <a class="nav-link" href="index-v2.html">Hm v2</a>
+                          <a class="nav-link" href="index-v3.html">Hm v3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <br />
+            <!-- end of nav-->
+            <div id="outer" class="container"><!-- outer container -->
             <div id="content">
-                <h1>Contactless Contact</h1>
-                <h2 id="banner">Contact form</h2>
-                <form action="success.html">
-                    <label for="fname">Full Name</label>
-                    <br />
-                    <input type="text" id="fname" name="fname" class="form-control" />
-                    <br />
-                    <label for="email">Email</label>
-                    <br />
-                    <input class="form-control" type="email" id="emailaddress" name="emailaddress" />
-                    <br />
-                    <label for="query">Query</label>
-                    <br />
-                    <textarea id="query" name="query" class="form-control"></textarea>
-                    <br /><br />
-                    <input type="submit" value="Send us your query!" onclick='btnClick2()' class="btn btn-success" />
+                <h1 class="text-primary">Contact Now</h1>
+                <p>Typical response time for contact requests is 2 minutes (+/- 48 hrs).</p>
+                <!-- Bootstrap > Forms > Layouts > Gutters https://getbootstrap.com/docs/5.2/forms/layout/#gutters -->
+                <!-- with modifications -->
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputFName4" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputFName4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputLName4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputLName4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="you@your.com">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Vancouver">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Province</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>BC</option>
+                      <option>AB</option>
+                      <option>SK</option>
+                      <option>MB</option>
+                      <option>ON</option>
+                      <option>PQ</option>
+                      <option>NB</option>
+                      <option>NL</option>
+                      <option>PEI</option>
+                      <option>NS</option>
+                      <option>YK</option>
+                      <option>NU</option>
+                      <option>NWT</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputQuery" class="form-label">Your Input</label>
+                    <textarea class="form-control" id="inputQuery" placeholder="Question, comment, suggestion, advice, condemnation"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sendy</button>
+                  </div>
                 </form>
-            </div>
-        </div>
+            </div> <!-- end content -->
+            <div id="footer">
+                <hr>
+                <p>&copy; Copyright JY&reg; </p>
+            </div><!-- end footer -->
+        </div> <!-- end outer -->
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <!-- CSS only -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- local CSS; after bootstrap -->
+        <link rel="stylesheet" href="style/styles.css" />
+        <link rel="icon" href="img/heart-icon-64.png" />
+        <link rel="stylesheet" href="style/styles.css" />
+        <!-- example of page-level styles -->
+        <style>
+            p {
+                color:blueviolet;
+            }
+            h1, h2, h3 {
+                color:crimson;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- set outer container using bootstrap class -->
+        <div id="outer" class="container">
+            <!-- from Bootstrap; incl hamburger on right at small window -->
+            <!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://symphonious-starlight-c8fafc.netlify.app/">JY Netlify Website</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="index.html">Home</a>
+                          <a class="nav-link" href="about.html">About</a>
+                          <a class="nav-link" href="contact.html">Contact</a>
+                          <a class="nav-link active" aria-content="page" href="list-tbl.html">List-Tbl</a>
+                          <a class="nav-link" href="index_orig.html">Hm orig</a>
+                          <a class="nav-link" href="index-v2.html">Hm v2</a>
+                          <a class="nav-link" href="index-v3.html">Hm v3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            <div id="content"> <!-- content div -->
+                <h1 id="banner">Lists and Tables</h1>
+                <p>Headings and paragraphs on this page styled from embedded 
+                    styles at top of page.
+                </p>
+                <p>Headings also have underline from external stylesheet.</p>
+                <p class="information">This is what it is about.</p>
+                <img src="img/aurora-bor_640.jpg" width="400" height="100" />
+                <h2>unordered list</h2>
+                <ul>
+                    <li>
+                        <p>unordered list item 1 if you like</p>
+                    </li>
+                    <li>got this without p tag</li>
+                </ul>
+                <h3>list in order</h3>
+                <ol>
+                    <li>ordered, numbered list for fun</li>
+                    <li>equally also ordered</li>
+                </ol>
+                <p> Generic paragraph. Nothing to see here.</p>
+                <p class="information">Another paragraph would come in handy here. Could be good to use the 
+                    class='information'.
+                </p>
+                <h3>Details</h3>
+                <!-- table with inline styles and also id from external css -->
+                <table style="width: 50%; text-align: center;" id="stafftbl">
+                    <tr>
+                        <th id="tbl">Name</th>
+                        <th>Age</th>
+                        <th>ID</th>
+                    </tr>
+                    <tr>
+                        <td>Louie Felt</td>
+                        <td>29</td>
+                        <td>4532</td>
+                    </tr>
+                    <tr>
+                        <td>Louise Fulton</td>
+                        <td>39</td>
+                        <td>5512</td>
+                    </tr>
+
+                </table>
+            </div><!-- end content section -->
+            <div id="footer">
+                <hr>
+                <p>&copy; Copyright JY&reg; </p>
+            </div><!-- end footer -->
+     </div><!-- end outer container -->
+        <script>
+            alert('Page load...JS alert!')
+        </script>
+    </body>
+</html>

@@ -2,67 +2,127 @@
 <html>
     <head>
         <title>About</title>
-        <style>
-            p {
-                color:blueviolet;
-            }
-            h1, h2, h3 {
-                color:crimson;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-            }
-        </style>
+        <!-- CSS only -->
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- local CSS; after bootstrap -->
+        <link rel="stylesheet" href="style/styles.css" />
+        <link rel="icon" href="img/heart-icon-64.png" />
         <link rel="stylesheet" href="style/styles.css" />
     </head>
     <body>
-        <a href="index.html">Hm run</a> | 
-        <a href="about.html">Aboot</a> | 
-        <a href="contact.html">Contakt</a>
-        <h1 id="banner">About</h1>
-        <p>Headings and paragraphs on this page styled from embedded 
-            styles at top of page.
-        </p>
-        <p>Headings also have underline from external stylesheet.</p>
-        <p class="information">This is what it is about.</p>
-        <img src="img/aurora-bor_640.jpg" width="400" height="100" />
-        <h2>unordered list</h2>
-        <ul>
-            <li>
-                <p>unordered list item 1 if you like</p>
-            </li>
-            <li>got this without p tag</li>
-        </ul>
-        <h3>list in order</h3>
-        <ol>
-            <li>ordered, numbered list for fun</li>
-            <li>equally also ordered</li>
-        </ol>
-        <p> Generic paragraph. Nothing to see here.</p>
-        <p class="information">Another paragraph would come in handy here. Could be good to use the 
-            class='information'.
-        </p>
-        <h3>Details</h3>
-        <!-- table with inline styles and also id from external css -->
-        <table style="width: 50%; text-align: center;" id="stafftbl">
-            <tr>
-                <th id="tbl">Name</th>
-                <th>Age</th>
-                <th>ID</th>
-            </tr>
-            <tr>
-                <td>Louie Felt</td>
-                <td>29</td>
-                <td>4532</td>
-            </tr>
-            <tr>
-                <td>Louise Fulton</td>
-                <td>39</td>
-                <td>5512</td>
-            </tr>
+        <!-- from Bootstrap; incl hamburger on right at small window -->
+        <!-- set above outer container to stretch across top of page -->
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="https://symphonious-starlight-c8fafc.netlify.app/">JY Netlify Website</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link" href="index.html">Home</a>
+                          <a class="nav-link active" aria-content="page" href="about.html">About</a>
+                          <a class="nav-link" href="contact.html">Contact</a>
+                          <a class="nav-link" href="#"> | </a>
+                          <a class="nav-link" href="list-tbl.html">List-Tbl</a>
+                          <a class="nav-link" href="contact-orig.html">Contact orig</a>
+                          <a class="nav-link" href="index_orig.html">Hm orig</a>
+                          <a class="nav-link" href="index-v2.html">Hm v2</a>
+                          <a class="nav-link" href="index-v3.html">Hm v3</a>
+                        </div>
+                      </div>
+                    </div>
+        </nav>
+        <br />
+        <!-- set outer container using bootstrap class; below nav so nav stretches across top of page -->
+        <div id="outer" class="container">
+            <div id="content"> <!-- content div -->
+                <div class="row">
+                    <div class="col-8"><!-- col-8 means 8 spaces of 12 -->
+                        <!-- h4 here, h1 below: not the best to have headings out of order; exception here to focus on main content -->
+                        <h4 class="text-primary">About This</h4>
+                        <p class="text-muted">
+                            Since 2022, relentless pursuit of excellence in chosone domains. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorum placeat consectetur accusamus recusandae nulla in, exercitationem alias et non ad facere, dolores cum, consequuntur autem dicta? Iure, quaerat. Ea?
+                        </p>
+                    </div>
+                    <div class="col-3 offset-md-1"><!-- 3 spaces of 12, plus 1 offset -->
+                        <h4 class="text-primary">Contact</h4>
+                        <ul>
+                            <li><a href="#" class="text-dark">Tweeter</a></li>
+                            <li><a href="#" class="text-dark">Linker</a></li>
+                            <li><a href="#" class="text-dark">Gitgit</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div id="portfolio" class="text-center">
+                    <h1 class="text-primary">Menu</h1>
+                    <p class="lead text-muted">
+                        All the best food and gourmet dishes made with passion from 
+                        premium hand-picked organic non-gmo pure self-replicating sterilized super-foods. All the best people. All the time. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore numquam aliquam quasi illo? Harum cum molestiae error eaque soluta nemo? Dolore voluptas est maxime veniam porro reprehenderit aspernatur mollitia placeat.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-success my-2">Let's Eat!</a>
+                        <a href="#" class="btn btn-warning my-2">Feedbach</a>
+                    </p>
+                </div>
+                <div class="row" id="gallery"><!-- new row for col content -->
+                    <div class="col-3"><!-- col-3 sets each col at 3 of 12 spaces for total 12 across 4 -->
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/meal_640.jpg" class="card-img-top" 
+                            style="margin-bottom: 33px;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">La Ensalada</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Check Salads</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/salmon_640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">El Pescado</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Fishies Delish</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/shishka_640.jpg" class="card-img-top" 
+                            style="margin-bottom: 23px;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">El Carne</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Meat & Veg</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/cake_640.jpg" class="card-img-top" 
+                            style="margin-bottom: 18px;" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">La Deserta</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">See Desserts</a>
+                            </div>
+                          </div>
+                    </div>
 
-        </table>
-    
-        <script>
-            alert('Page load...JS alert!')
-        </script>
+                </div>    
+            </div><!-- end content section -->
+            <div id="footer">
+                <hr>
+                <p>&copy; Copyright JY&reg; </p>
+            </div><!-- end footer -->
+     </div><!-- end outer container -->
     </body>
 </html>

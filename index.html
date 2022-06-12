@@ -13,11 +13,10 @@
         <link rel="icon" href="img/heart-icon-64.png" />
     </head>
     <body>
-        <!-- set outer container using bootstrap class -->
-        <div id="outer" class="container">
         <!-- from Bootstrap; incl hamburger on right at small window -->
-            <!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- set above outer container to go across top of page -->
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="https://symphonious-starlight-c8fafc.netlify.app/">JY Netlify Website</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,17 +25,23 @@
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                       <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" href="about.html">About</a>
+                      <a class="nav-link" href="contact.html">Contact</a>
+                      <a class="nav-link" href="#"> | </a>
+                      <a class="nav-link" href="list-tbl.html">List-Tbl</a>
+                      <a class="nav-link" href="contact-orig.html">Contact orig</a>
                       <a class="nav-link" href="index_orig.html">Hm orig</a>
                       <a class="nav-link" href="index-v2.html">Hm v2</a>
                       <a class="nav-link" href="index-v3.html">Hm v3</a>
-                      <a class="nav-link" href="about.html">About</a>
-                      <a class="nav-link" href="contact.html">Contact</a>
                     </div>
                   </div>
                 </div>
-              </nav>
+        </nav>
+        <br />
         <!-- end of nav-->
-        <div id="content"> 
+    <!-- set outer container using bootstrap class -->
+    <div id="outer" class="container">
+        <div id="content"> <!-- content div -->
             <h1>Simple Demonstration Site</h1>
             <p class="pctr" style="font-style: italic;">Leveraging Bootstap, with some extra CSS and a touch of JavaScript.</p>
             <p id="tgtTag">Hola! Mi llamo John! Yo tengo un bicicleta. Yo quiero pagar la cuenta, por favour.</p>
