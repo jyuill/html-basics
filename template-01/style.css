@@ -1,0 +1,70 @@
+
+/* basics */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+}
+
+/* flexbox layout */
+.container {
+    display: flex;
+    height: 100vh; /* Adjust as needed */
+    padding: 0px;
+    /*border: 1px solid orange;*/
+  }
+  
+  .sidebar {
+    flex: 0 0 200px; /* Fixed width of specified pixels */
+    background-color: royalblue; /* Example background color */
+    /* Add any other styles for the left-hand column */
+    padding: 0px;
+    margin: 0px;
+    /*border: 1px solid black;*/
+}
+  
+  .main {
+    flex: 1; /* Flexes and takes remaining width */
+    /* Add any other styles for the main column */
+    padding-left: 20px;
+  }
+
+  /* nav */
+  .nav {
+    /*border: 1px solid red;*/
+    background-color: darkblue;
+  }
+  .categories {
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+  }
+  .category {
+    padding: 0px 0px 0px 0px;
+    /*border: 1px solid green;*/
+  }
+  .category-btn {
+    border: none;
+    padding: 5px 0px 5px 10px;
+    width: 100%;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+  .subcategories {
+    list-style-type: none;
+    display: none;
+  }
+
+  .subcategories.active {
+    display: block;
+  }
+  .subcategory-btn {
+    /* Add your default styling for subcategory buttons here */
+
+  }
+  
+  .subcategory-btn.selected {
+    /* Add your styling for selected subcategory buttons here */
+  }
+  
+  
+  
