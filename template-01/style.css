@@ -15,7 +15,7 @@ body {
   
   .sidebar {
     flex: 0 0 200px; /* Fixed width of specified pixels */
-    background-color: royalblue; /* Example background color */
+    background-color: #191970; /* Example background color */
     /* Add any other styles for the left-hand column */
     padding: 0px;
     margin: 0px;
@@ -41,17 +41,24 @@ body {
     padding: 0px 0px 0px 0px;
     /*border: 1px solid green;*/
   }
+  
   .category-btn {
     border: none;
-    padding: 5px 0px 5px 10px;
+    padding: 8px 0px 8px 10px;
     width: 100%;
     text-align: left;
     background-color: black;
-    color: white;
+    color: #dddddd;
   }
+  .category-btn:hover {
+    background-color: #0066ff;
+    color: #ffffff;
+  }
+
   .subcategories {
     list-style-type: none;
     display: none;
+    padding: 0px 0px 0px 0px;
   }
 
   .subcategories.active {
@@ -59,11 +66,20 @@ body {
   }
   .subcategory-btn {
     /* Add your default styling for subcategory buttons here */
-
+    width: 100%;
+    border: none;
+    padding: 6px 0px 6px 20px;
+    text-align: left;
+    background-color: darkblue;
+    color: #dddddd;
   }
-  
+  .subcategory-btn:hover {
+    background-color: #0066ff;
+    color: #ffffff;
+  }
   .subcategory-btn.selected {
     /* Add your styling for selected subcategory buttons here */
+    background-color: #3399ff;;
   }
   
   
